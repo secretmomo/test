@@ -4,7 +4,6 @@ import timezone from "dayjs/plugin/timezone";
 
 console.log("start");
 console.log(dayjs().format("YYYY-MM-DD HH:mm:ss"));
-console.log(dayjs().tz().format("YYYY-MM-DD HH:mm:ss"));
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
