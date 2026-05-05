@@ -6,7 +6,7 @@ console.log(dayjs().format("YYYY-MM-DD HH:mm:ss"));
 console.log("end");
 
 
-const url = `https://www.szse.cn/api/report/exchange/onepersistenthour/monthList?month=${dayjs().format("YYYY-MM")}`;
+const url = `https://finance.sina.com.cn/realstock/company/klc_td_sh.txt`;
 const res = await fetch(url) ;
-const data = await res.json();
+const data = await res.text();
 console.log(data);
