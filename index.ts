@@ -33,4 +33,4 @@ logger.debug('Hello, world!');
 logger.trace('Hello, world!');
 logger.fatal('Hello, world!');
 logger.child({ name: 'test', age: 18 }).info('Hello, world!');
-// logger.error(new Error('Hello, world!'));
+logger.error(new Error('Hello, world!'));
